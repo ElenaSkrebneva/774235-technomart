@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Elena Skrebneva](https://up.htmlacademy.ru/htmlcss/23/user/774235).
-* Наставник: [Юрий Михин] (https://htmlacademy.ru/profile/id563815).
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/id563815).
 
 ---
 
