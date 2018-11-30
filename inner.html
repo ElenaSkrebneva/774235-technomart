@@ -36,7 +36,7 @@
 			<nav class="header-bottom">
 				<div class="container">
 					<ul class="header-nav">
-						<li>Главная</li>
+						<li><a href="#">Главная</a></li>
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Новости</a></li>
@@ -58,8 +58,23 @@
 				</ul>
 				<h1>Перфораторы</h1>
 				<section class="filters">
-					<h2 class="visually-hidden">Фильтр товаров</h2>
-					<!-- Здесь будет форма -->
+					<h2 class="hidden">Фильтр товаров</h2>
+					<form>
+						<div class="filter-form-group">
+							<h3>Производители</h3>
+							<label class="producer"><input type="checkbox" name="Bosch">Bosch</label>
+							<label class="producer"><input type="checkbox" name="Interskol">Интерскол</label>
+							<label class="producer"><input type="checkbox" name="Makita">Makita</label>
+							<label class="producer"><input type="checkbox" name="Dewalt">Dewalt</label>
+							<label class="producer"><input type="checkbox" name="Hitachi">Hitachi</label>
+						</div>
+						<div class="filter-form-group">
+							<h3>Питание</h3>
+							<label class="charge"><input type="radio" name="charge-type" value="accumulative">Аккумуляторные</label>
+							<label class="charge"><input type="radio" name="charge-type" value="network">Сетевые</label>
+						</div>	
+						<button class="show" type="button">Показать</button>
+					</form>
 				</section>
       
 				<section class="catalog">
@@ -182,6 +197,7 @@
 						</li>
 					
 					</ul>
+					
 				</section>
 			
 				<section class="pagination">
@@ -228,9 +244,9 @@
 					</section>
 					<section class="social-media">
 						<ul class="social-media-list">
-							<li><a href="#"><img src="img/icon-vk.svg" alt="VK" width="42" height="42"></a></li>
-							<li><a href="#"><img src="img/icon-fb.svg" alt="FB" width="42" height="42"></a></li>
-							<li><a href="#"><img src="img/icon-insta.svg" alt="INSTA" width="42" height="42"></a></li>
+							<li><a href="#"><img src="img/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
+							<li><a href="#"><img src="img/icon-fb.svg" alt="FB" width="12" height="22"></a></li>
+							<li><a href="#"><img src="img/icon-insta.svg" alt="INSTA" width="21" height="21"></a></li>
 						</ul>
 					</section>
 					<section class="references">
@@ -239,6 +255,6 @@
 					</section>
 				</div>	
 			</div>
-		</footer>
+		</footer>			
 	</body>
 </html>
