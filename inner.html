@@ -3,18 +3,19 @@
 	<head>
 		<title>Technomart</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="#" />
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="technomart.css" />
 	</head>
 
 	<body>
 		<header>
 			<div class="header-top">
 				<div class="container">
-					<div class="technomart"><a href="index.html">Техномарт</a></div>
-					<div class="header-link">Поиск</div>
-					<div class="header-link">Закладки</div>
-					<div class="header-link">Корзина: 10</div>
-					<div class="header-link">Оформить заказ</div>
+					<div class="technomart technomart-header"><a href="index.html">Техномарт</a></div>
+					<div class="header-link search">Поиск</div>
+					<div class="header-link bookmarks">Закладки</div>
+					<div class="header-link basket basket-not-empty">Корзина: 10</div>
+					<div class="header-link make-order">Оформить заказ</div>
 				</div>
 			</div>
 			<div class="header-middle">
@@ -27,8 +28,8 @@
 						</p>
 					</div>
 					<div class="login-area">
-						<form>
-							<input id="login-name" value="Равшан Джамшутович">
+						<form action="https://echo.htmlacademy.ru" method="post">
+							<input class="login-field" id="login-name" value="Равшан Джамшутович">
 						</form>
 						<ul class="login-links">
 							<li><a href="#">Мои заказы</a></li>
@@ -63,14 +64,14 @@
 				<h1>Перфораторы</h1>
 				<section class="filters">
 					<h2 class="hidden">Фильтр товаров</h2>
-					<form>
+					<form action="https://echo.htmlacademy.ru" method="post">
 						<div class="filter-form-group">
 							<h3>Производители</h3>
-							<label class="producer"><input type="checkbox" name="Bosch">Bosch</label>
-							<label class="producer"><input type="checkbox" name="Interskol">Интерскол</label>
-							<label class="producer"><input type="checkbox" name="Makita">Makita</label>
-							<label class="producer"><input type="checkbox" name="Dewalt">Dewalt</label>
-							<label class="producer"><input type="checkbox" name="Hitachi">Hitachi</label>
+							<label class="producer"><input type="checkbox" name="producer" value="Bosch">Bosch</label>
+							<label class="producer"><input type="checkbox" name="producer" value="Interskol">Интерскол</label>
+							<label class="producer"><input type="checkbox" name="producer" value="Makita">Makita</label>
+							<label class="producer"><input type="checkbox" name="producer" value="Dewalt">Dewalt</label>
+							<label class="producer"><input type="checkbox" name="producer" value="Hitachi">Hitachi</label>
 						</div>
 						<div class="filter-form-group">
 							<h3>Питание</h3>
@@ -78,6 +79,7 @@
 							<label class="charge"><input type="radio" name="charge-type" value="network">Сетевые</label>
 						</div>	
 						<button class="show" type="button">Показать</button>
+						<button type="submit">Отправить</button>
 					</form>
 				</section>
       
@@ -221,22 +223,22 @@
 		<footer>
 			<div class="footer-top">
 				<div class="container">
-					<p class="technomart">Техномарт</p>
+					<p class="technomart technomart-footer"><a href="index.html">Техномарт</a></p>
 					<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
 					+7 (812) 555-05-55
 					</p>
 					<ul class="footer-nav upper-nav">
-						<li>Компания</li>
-						<li>Новости</li>
-						<li>Каталог</li>
-						<li>Доставка</li>
-						<li>Контакты</li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
-					<ul class="footer-nav down-nav">
-						<li>Материалы</li>
-						<li>Техника</li>
-						<li>Инструмент</li>
-						<li>Спецпредложения</li>
+					<ul class="footer-nav lower-nav">
+						<li><a href="#">Материалы</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Инструмент</a></li>
+						<li><a href="#">Спецпредложения</a></li>
 					</ul>
 				</div>
 			</div>
@@ -255,7 +257,7 @@
 					</section>
 					<section class="references">
 						<div>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-						<div>Разработано &mdash<a href="http://htmlacademy.ru">htmlacademy.ru</a></div>
+						<div>Разработано &mdash <a href="http://htmlacademy.ru">htmlacademy.ru</a></div>
 					</section>
 				</div>	
 			</div>
