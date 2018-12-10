@@ -4,7 +4,7 @@
 		<title>HTML Academy: Техномарт</title>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="technomart.css" />
+		<link rel="stylesheet" type="text/css" href="css/technomart.css" />
 	</head>
 
 	<body>
@@ -36,13 +36,13 @@
 			<nav class="header-bottom">
 				<div class="container">
 					<ul class="header-nav">
-						<li><a>Главная</a></li>
-						<li><a href="#">Компания</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Спецпредложения</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="header-nav-li"><span class="header-nav-link">Главная</span></li>
+						<li class="header-nav-li"><a class="header-nav-link" href="#">Компания</a></li>
+						<li class="header-nav-li"><a class="header-nav-link" href="inner.html">Каталог</a></li>
+						<li class="header-nav-li"><a class="header-nav-link" href="#">Новости</a></li>
+						<li class="header-nav-li"><a class="header-nav-link" href="#">Спецпредложения</a></li>
+						<li class="header-nav-li"><a class="header-nav-link" href="#">Доставка</a></li>
+						<li class="header-nav-li"><a class="header-nav-link" href="#">Контакты</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -50,49 +50,49 @@
 		
 		<main>
 			<div class="container">
-				<section class="self-commercial">
-					<div>
-						<h2>Компания "Техномарт"</h2>
-						<p>Настоящий мужской шоппинг начинается здесь! Оргомный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-						<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+				<section class="self-commercial-section">
+					<div class="self-commercial-div">
+						<h2 class="self-commercial-h2">Компания "Техномарт"</h2>
+						<p class="self-commercial-p">Настоящий мужской шоппинг начинается здесь! Оргомный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+						<p class="self-commercial-p">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 						Техномарт работает со многими транспортными компаниями:</p>
-						<ul>
+						<ul class="self-commercial-partner-list">
 							<li>Деловые линии</li>
 							<li>Автотрейдинг</li>
 							<li>ЖелДорЭкспедиция</li>
 						</ul>
-						<a href="#" class="red-button">Подробнее о компании</a>
+						<a href="#" class="button red-button">Подробнее о компании</a>
 					</div>
-					<div>
-						<h2>Контакты</h2>
-						<p>Вы можете забрать товар сами<br>
+					<div class="self-commercial-div">
+						<h2 class="self-commercial-h2">Контакты</h2>
+						<p class="self-commercial-p">Вы можете забрать товар сами<br>
 						заехав в наш офис:</p>
 						<p><a href="#"><img alt="карта проезда" src="img/map-small.jpg" width="300" height="158"></a></p>
-						<a href="#" class="red-button">Заблудились? Напишите нам!</a>
+						<a href="#" class=" button red-button">Заблудились? Напишите нам!</a>
 					</div>
 				</section>
 				<section class="modal modal-request">
 					<h2 class="hidden">Как до нас добраться</h2>
-					<a class="map" href="#"><img src="img/map-big.jpg" alt="Карта проезда" width="940" height="446"></a>
+					<a class="map-link" href="#"><img src="img/map-big.jpg" alt="Карта проезда" width="940" height="446"></a>
 					<form class="request-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="request-form-top">
-							<div class="input-field">
-								<label for="name">Ваше имя:</label>
-								<input type="text" id="name" placeholder="Имя Фамилия">
+							<div class="request-form-input-area">
+								<label class="request-form-label" for="name">Ваше имя:</label>
+								<input class="request-form-input" type="text" id="name" placeholder="Имя Фамилия">
 							</div>
-							<div class="input-field">
-								<label for="email">Ваш e-mail:</label>
-								<input type="email" id="email" placeholder="email@example.com">
+							<div class="request-form-input-area">
+								<label class="request-form-label" for="email">Ваш e-mail:</label>
+								<input class="request-form-input" type="email" id="email" placeholder="email@example.com">
 							</div>
 						</div>
 						<div class="request-form-middle">
 							<div class="input-field">
-								<label for="the-message">Текст письма:</label>
-								<textarea id="the-message" placeholder="В свободной форме" rows="5"></textarea>
+								<label class="request-form-label" for="the-message">Текст письма:</label>
+								<textarea class="request-form-input" id="the-message" placeholder="В свободной форме" rows="5"></textarea>
 							</div>
 						</div>
 						<div class="request-form-bottom">
-							<button type="submit" class="red-button">Отправить</button>
+							<button type="submit" class=" button red-button">Отправить</button>
 							<button type="button" class="modal-close">Закрыть</button>
 						</div>
 					</form>
@@ -108,17 +108,17 @@
 					+7 (812) 555-05-55
 					</p>
 					<ul class="footer-nav upper-nav">
-						<li><a href="#">Компания</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="inner.html">Каталог</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Компания</a></li>
+						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Новости</a></li>
+						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="inner.html">Каталог</a></li>
+						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Доставка</a></li>
+						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Контакты</a></li>
 					</ul>
 					<ul class="footer-nav lower-nav">
-						<li><a href="#">Материалы</a></li>
-						<li><a href="#">Техника</a></li>
-						<li><a href="#">Инструмент</a></li>
-						<li><a href="#">Спецпредложения</a></li>
+						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Материалы</a></li>
+						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Техника</a></li>
+						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Инструмент</a></li>
+						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Спецпредложения</a></li>
 					</ul>
 				</div>
 			</div>
@@ -130,14 +130,14 @@
 					</section>
 					<section class="social-media">
 						<ul class="social-media-list">
-							<li><a href="#"><img src="img/icon-vk.svg" alt="Vkontakte" width="26" height="15"></a></li>
-							<li><a href="#"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a></li>
-							<li><a href="#"><img src="img/icon-insta.svg" alt="Instagram" width="21" height="21"></a></li>
+							<li class="social-media-list-li"><a class="social-media-link" href="#"><img src="img/icon-vk.svg" alt="Vkontakte" width="26" height="15"></a></li>
+							<li class="social-media-list-li"><a class="social-media-link" href="#"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a></li>
+							<li class="social-media-list-li"><a class="social-media-link" href="#"><img src="img/icon-insta.svg" alt="Instagram" width="21" height="21"></a></li>
 						</ul>
 					</section>
 					<section class="references">
-						<div>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-						<div>Разработано &mdash; <a href="http://htmlacademy.ru">htmlacademy.ru</a></div>
+						<div class="references-div">Обратная связь: <a class="references-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+						<div class="references-div">Разработано &mdash; <a class="references-link" href="http://htmlacademy.ru">htmlacademy.ru</a></div>
 					</section>
 				</div>	
 			</div>
