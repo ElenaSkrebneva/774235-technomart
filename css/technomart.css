@@ -341,9 +341,9 @@ header {
 	min-width: 460px;
 	max-width: 460px;
 }
-.request-form input:active,
-.request-form textarea:active  {
-	border: 2px solid #ee3643;
+.request-form input:focus,
+.request-form textarea:focus  {
+	outline: 2px solid #ee3643;
 }
 .request-form-label {
 	color: #000000;
