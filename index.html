@@ -11,7 +11,7 @@
 		<header>
 			<div class="header-top">
 				<div class="container">
-					<div class="technomart technomart-header"><a href="#">Техномарт</a></div>
+					<div class="header-link technomart technomart-header"><a href="#">Техномарт</a></div>
 					<div class="header-link search">Поиск</div>
 					<div class="header-link bookmarks">Закладки</div>
 					<div class="header-link basket">Корзина</div>
@@ -20,16 +20,18 @@
 			</div>
 			<div class="header-middle">
 				<div class="container">
-					<p class="moto">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-					<div class="header-address">
+					<p class="header-middle-element moto">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+					<div class="header-middle-element header-address">
 						<p>
 							<span class="telephone">+7 (812) 555-05-55</span>
 							г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
 						</p>
 					</div>
-					<div class="login-area">
-						<a class="login-field" href="#">Войти</a>
-						<a class="login-field" href="#">Регистрация</a>
+					<div class="header-middle-element login-area">
+						<div class="login-fields">
+							<a class="login-field" href="#">Войти</a>
+							<a class="login-field" href="#">Регистрация</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -50,50 +52,54 @@
 		
 		<main>
 			<div class="container">
-				<section class="self-commercial-section">
-					<div class="self-commercial-div">
-						<h2 class="self-commercial-h2">Компания "Техномарт"</h2>
-						<p class="self-commercial-p">Настоящий мужской шоппинг начинается здесь! Оргомный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-						<p class="self-commercial-p">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+				<section class="info">
+					<div class="info-the-company">
+						<h2>Компания "Техномарт"</h2>
+						<p>Настоящий мужской шоппинг начинается здесь! Оргомный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+						<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 						Техномарт работает со многими транспортными компаниями:</p>
-						<ul class="self-commercial-partner-list">
+						<ul class="info-partner-list">
 							<li>Деловые линии</li>
 							<li>Автотрейдинг</li>
 							<li>ЖелДорЭкспедиция</li>
 						</ul>
 						<a href="#" class="button red-button">Подробнее о компании</a>
 					</div>
-					<div class="self-commercial-div">
-						<h2 class="self-commercial-h2">Контакты</h2>
-						<p class="self-commercial-p">Вы можете забрать товар сами<br>
+					<div class="info-contacts">
+						<h2>Контакты</h2>
+						<p>Вы можете забрать товар сами<br>
 						заехав в наш офис:</p>
-						<p><a href="#"><img alt="карта проезда" src="img/map-small.jpg" width="300" height="158"></a></p>
+						<p class="info-map"><a href="#"><img alt="карта проезда" src="img/map-small.jpg" width="300" height="158"></a></p>
 						<a href="#" class=" button red-button">Заблудились? Напишите нам!</a>
 					</div>
 				</section>
-				<section class="modal modal-request">
+				<section class="modal request">
 					<h2 class="hidden">Как до нас добраться</h2>
-					<a class="map-link" href="#"><img src="img/map-big.jpg" alt="Карта проезда" width="940" height="446"></a>
+					<a class="map-link" href="#">
+						<img src="img/map-big.jpg" alt="Карта проезда" width="940" height="446">
+					</a>
 					<form class="request-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="request-form-top">
-							<div class="request-form-input-area">
-								<label class="request-form-label" for="name">Ваше имя:</label>
-								<input class="request-form-input" type="text" id="name" placeholder="Имя Фамилия">
+							<div class="request-form-container">
+								<div class="request-form-input-area name">
+									<label class="request-form-label" for="name">Ваше имя:</label>
+									<input class="request-form-input" type="text" id="name" placeholder="Имя Фамилия">
+								</div>
+								<div class="request-form-input-area email">
+									<label class="request-form-label" for="email">Ваш e-mail:</label>
+									<input class="request-form-input" type="email" id="email" placeholder="email@example.com">
+								</div>
 							</div>
-							<div class="request-form-input-area">
-								<label class="request-form-label" for="email">Ваш e-mail:</label>
-								<input class="request-form-input" type="email" id="email" placeholder="email@example.com">
-							</div>
-						</div>
-						<div class="request-form-middle">
-							<div class="input-field">
-								<label class="request-form-label" for="the-message">Текст письма:</label>
-								<textarea class="request-form-input" id="the-message" placeholder="В свободной форме" rows="5"></textarea>
+							<div class="request-form-container">
+								<div class="request-form-input-area">
+									<label class="request-form-label" for="the-message">Текст письма:</label>
+									<textarea class="request-form-input" id="the-message" placeholder="В свободной форме" rows="5"></textarea>
+								</div>
 							</div>
 						</div>
 						<div class="request-form-bottom">
 							<button type="submit" class=" button red-button">Отправить</button>
-							<button type="button" class="modal-close">Закрыть</button>
+							<button type="button" class="modal-close hidden">Закрыть</button>
 						</div>
 					</form>
 				</section>
@@ -103,23 +109,27 @@
 		<footer>
 			<div class="footer-top">
 				<div class="container">
-					<p class="technomart technomart-footer"><a href="#">Техномарт</a></p>
-					<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
-					+7 (812) 555-05-55
-					</p>
-					<ul class="footer-nav upper-nav">
-						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Компания</a></li>
-						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Новости</a></li>
-						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="inner.html">Каталог</a></li>
-						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Доставка</a></li>
-						<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Контакты</a></li>
-					</ul>
-					<ul class="footer-nav lower-nav">
-						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Материалы</a></li>
-						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Техника</a></li>
-						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Инструмент</a></li>
-						<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Спецпредложения</a></li>
-					</ul>
+					<div class="footer-top-left">
+						<p class="technomart technomart-footer"><a href="index.html">Техномарт</a></p>
+						<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
+						+7 (812) 555-05-55
+						</p>
+					</div>
+					<div class="footer-top-right">
+						<ul class="footer-nav footer-upper-nav">
+							<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Компания</a></li>
+							<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Новости</a></li>
+							<li class="footer-nav-li"><a class="footer-upper-nav-link" href="inner.html">Каталог</a></li>
+							<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Доставка</a></li>
+							<li class="footer-nav-li"><a class="footer-upper-nav-link" href="#">Контакты</a></li>
+						</ul>
+						<ul class="footer-nav footer-lower-nav">
+							<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Материалы</a></li>
+							<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Техника</a></li>
+							<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Инструмент</a></li>
+							<li class="footer-nav-li"><a class="footer-lower-nav-link" href="#">Спецпредложения</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="footer-bottom">
