@@ -58,7 +58,7 @@
 		<main>
 			<div class="container">
 				<ul class="breadcrumbs">
-					<li class="breadcrumbs-li"><a class="breadcrumbs-link" href="index.html">Home</a></li>
+					<li class="breadcrumbs-li"><a class="breadcrumbs-link" href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Главная"></a></li>
 					<li class="breadcrumbs-li"><a class="breadcrumbs-link" href="#">Каталог</a></li>
 					<li class="breadcrumbs-li"><a class="breadcrumbs-link" href="#">Инструмент</a></li>
 					<li class="breadcrumbs-li">Перфораторы</li>
@@ -73,16 +73,23 @@
 						<form action="https://echo.htmlacademy.ru" method="post">
 							<fieldset class="filters-form-group">
 								<h3 class="filter-name">Производители:</h3>
-								<label class="filters-form-label"><input class="filters-form-input" type="checkbox" name="producer" value="Bosch">Bosch</label>
-								<label class="filters-form-label"><input class="filters-form-input" type="checkbox" name="producer" value="Interskol">Интерскол</label>
-								<label class="filters-form-label"><input class="filters-form-input" type="checkbox" name="producer" value="Makita">Makita</label>
-								<label class="filters-form-label"><input class="filters-form-input" type="checkbox" name="producer" value="Dewalt">Dewalt</label>
-								<label class="filters-form-label"><input class="filters-form-input" type="checkbox" name="producer" value="Hitachi">Hitachi</label>
+								<input class="filters-form-input" type="checkbox" name="producer" id="Bosch" value="Bosch">
+								<label for="Bosch" class="filters-form-label filters-form-checkbox-label">Bosch</label>
+								<input class="filters-form-input" type="checkbox" name="producer" id="Interskol" value="Interskol">
+								<label for="Interskol" class="filters-form-label filters-form-checkbox-label">Интерскол</label>
+								<input class="filters-form-input" type="checkbox" name="producer" id="Makita" value="Makita">
+								<label for="Makita" class="filters-form-label filters-form-checkbox-label">Makita</label>
+								<input class="filters-form-input" type="checkbox" name="producer" id="Dewalt" value="Dewalt">
+								<label for="Dewalt" class="filters-form-label filters-form-checkbox-label">Dewalt</label>
+								<input class="filters-form-input" type="checkbox" name="producer" id="Hitachi" value="Hitachi">
+								<label for="Hitachi" class="filters-form-label filters-form-checkbox-label">Hitachi</label>
 							</fieldset>
 							<fieldset class="filters-form-group">
 								<h3 class="filter-name">Питание:</h3>
-								<label class="filters-form-label"><input class="filters-form-input" type="radio" name="charge-type" value="accumulative">Аккумуляторные</label>
-								<label class="filters-form-label"><input class="filters-form-input" type="radio" name="charge-type" value="network">Сетевые</label>
+								<input class="filters-form-input" type="radio" name="charge-type" id="accumulative" value="accumulative">
+								<label for="accumulative" class="filters-form-label filters-form-radio-label">Аккумуляторные</label>
+								<input class="filters-form-input" type="radio" name="charge-type" id="network" value="network">
+								<label for="network" class="filters-form-label filters-form-radio-label">Сетевые</label>
 							</fieldset>	
 							<button class="filters-form-button show" type="button">Показать</button>
 							<button class="filters-form-button hidden" type="submit">Отправить</button>
@@ -126,7 +133,7 @@
 									<img src="img/bosch2000.jpg" width="127" height="112" alt="BOSCH BFG 2000">
 								</p>
 								<h3 class="catalog-item-h3"><a class="catalog-item-h3-link" href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
-								<p class="catalog-item-old-price"></p>
+
 								<p class="catalog-item-new-price">12500 Р.</p>
 							</li>
 					
@@ -165,7 +172,7 @@
 									<img src="img/bosch2000.jpg" width="127" height="112" alt="BOSCH BFG 2000">
 								</p>
 								<h3 class="catalog-item-h3"><a class="catalog-item-h3-link" href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
-								<p class="catalog-item-old-price"></p>
+							
 								<p class="catalog-item-new-price">12500 Р.</p>
 							</li>
 					
@@ -204,7 +211,7 @@
 									<img src="img/bosch2000.jpg" width="127" height="112" alt="BOSCH BFG 2000">
 								</p>
 								<h3 class="catalog-item-h3"><a class="catalog-item-h3-link" href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
-								<p class="catalog-item-old-price"></p>
+						
 								<p class="catalog-item-new-price">12500 Р.</p>
 							</li>
 					
