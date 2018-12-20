@@ -99,6 +99,7 @@ body {
 	color: #ffffff;
 	background-color: #ee3643;
 	transform: rotate(45deg);
+	z-index: 2;
 }
 
 .catalog-item:nth-child(5)::after,
@@ -182,7 +183,19 @@ body {
 }
 
 .catalog-item-buttons {
-	height: 160px;
+	display: none;
+	position:absolute;
+    top:0;
+    left:0;
+    width:218px;
+    height:88px;
+    padding:40px 0;
+    background-color:rgba(255,255,255,0.9);
+    z-index:1;
+}
+
+.catalog-item:hover .catalog-item-buttons {
+	display: block;
 }
 
 .catalog-item-h3 {
