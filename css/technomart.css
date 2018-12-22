@@ -11,6 +11,11 @@ body {
 	display: none;
 }
 
+.address-area {
+	width: 270px;
+	
+}
+
 .breadcrumbs {
 	padding: 0;
 	display: flex;
@@ -188,9 +193,9 @@ body {
     top:0;
     left:0;
     width:218px;
-    height:88px;
-    padding:40px 0;
-    background-color:rgba(255,255,255,0.9);
+    height:100px;
+    padding:18px 0;
+    background-color:rgba(255,255,255,1);
     z-index:1;
 }
 
@@ -270,12 +275,6 @@ body {
 	justify-content: space-between;
 }
 
-.catalog-window::after {
-	display: table;
-	content: "";
-	clear: both;
-}
-
 .container {
 	width: 940px;
 	margin: 0 auto;
@@ -345,7 +344,6 @@ body {
 	width: 24px;
 	height: 24px;
 	background-image: url(../img/checkbox-off.svg);
-	background-size: contain;
 	background-repeat: no-repeat;
 }
 
@@ -498,7 +496,8 @@ header {
 	flex-direction: column;
 	align-items: center;
 	margin: 0;
-	padding: 0 0 0 20px;
+	margin-bottom: 20px;
+	padding: 0;
 	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
@@ -536,7 +535,7 @@ header {
 
 .header-link.bookmarks {
 	width: 150px;
-	padding-left: 44px;
+	padding-left: 45px;
 }
 
 .header-link.bookmarks::before {
@@ -562,7 +561,7 @@ header {
 
 .header-link.basket {
 	width: 150px;
-	padding-left: 44px;
+	padding-left: 50px;
 }
 
 .header-link.basket::before {
@@ -634,18 +633,21 @@ header {
 }
 
 .header-middle {
-	margin: 47px 0 44px 0;
+	margin: 50px 0 20px 0;
 }
 
 .header-middle .container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .header-middle-element {
 	margin: 0;
 	padding: 0;
+	min-height: 60px;
+	flex-grow: 0;
 }
 
 .header-nav {
@@ -755,14 +757,15 @@ header {
 }
 
 .login-area {
-	max-width: 300px;
-	min-width: 300px;
+	min-width: 280px;
+	margin: 0;
+	padding: 0;
 }
 
 .login-field {
 	position: relative;
-	margin: 0 0 0 10px;
 	flex-grow: 1;
+	margin: 0;
 	text-align: center;
 	padding: 10px 25px;
 	text-decoration: none;
@@ -784,8 +787,8 @@ header {
 }
 
 .login-field.enter {
-	text-align: right;
-	padding-right: 27px;
+	padding-left: 45px;
+	margin-right: 10px;
 }
 
 .login-field.enter::before {
@@ -808,9 +811,31 @@ header {
 	background-image: url(../img/icon-login.svg);
 }
 
+.login-field.logout::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 17px;
+	background-image: url(../img/icon-login.svg);
+	background-repeat: no-repeat;
+	top: 12px;
+	right: 10px;
+	background-position: 50% 50%;
+}
+
+.login-field.logout:hover::before {
+	background-image: url(../img/icon-login-dark.svg);
+}
+
+.login-field.logout:active::b {
+	background-image: url(../img/icon-login.svg);
+}
+
 .login-field-filled {
+	box-sizing: border-box;
 	text-align: left;
 	padding-left: 47px;
+	padding-right: 20px;
 }
 
 .login-field-filled, 
@@ -829,20 +854,8 @@ header {
 	height: 18px;
 	background-image: url(../img/icon-user.svg);
 	background-repeat: no-repeat;
-	top: 13px;
+	top: 12px;
 	left: 13px;
-	background-position: 50% 50%;
-}
-
-.login-field-filled::after {
-	position: absolute;
-	content: "";
-	width: 20px;
-	height: 17px;
-	background-image: url(../img/icon-login.svg);
-	background-repeat: no-repeat;
-	top: 14px;
-	right: 10px;
 	background-position: 50% 50%;
 }
 
@@ -850,26 +863,20 @@ header {
 	background-image: url(../img/icon-user-dark.svg);
 }
 
-.login-field-filled:hover::after {
-	background-image: url(../img/icon-login-dark.svg);
-}
-
 .login-field-filled:active::before {
 	background-image: url(../img/icon-user.svg);
 }
 
-.login-field-filled:active::after {
-	background-image: url(../img/icon-login.svg);
-}
-
 .login-fields {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-bewteen;
+	margin: 0;
+	padding: 0;
 }
 
 .login-link {
 	position: relative;
-	margin: 0 17px;
+	margin: 0 15px;
 	padding: 0;
 	color: #32425c;
 	font-size: 16px;
@@ -907,15 +914,29 @@ header {
 
 }
 
+.map-pop-up {
+	position: fixed;
+	width: 940px;
+	top: 25px;
+	left: 50%;
+	margin-left: -470px;
+}
+
+.modal {
+	position: fixed;
+	background-color: #ffffff;
+	display: none;
+}
+
 .moto {
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
 	color: #ee3643;
-	max-width: 193px;
-	width: 193px;
+	max-width: 200px;
+	padding: 0;
+	padding-left: 50px;
 	margin: 0;
-	padding: 0 0 0 53px;
 	text-align: left;
 }
 
@@ -1045,6 +1066,12 @@ header {
 .request-form-top {
 	min-height: 320px;
 	padding-top: 35px;
+}
+
+.request-pop-up {
+	bottom: 200px;
+	left: 50%;
+	margin-left: -310px;
 }
 
 .social-media-list {
