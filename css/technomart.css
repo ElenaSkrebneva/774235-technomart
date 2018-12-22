@@ -816,7 +816,7 @@ header {
 	content: "";
 	width: 20px;
 	height: 17px;
-	background-image: url(../img/icon-login.svg);
+	background-image: url(../img/icon-logout.svg);
 	background-repeat: no-repeat;
 	top: 12px;
 	right: 10px;
@@ -824,17 +824,17 @@ header {
 }
 
 .login-field.logout:hover::before {
-	background-image: url(../img/icon-login-dark.svg);
+	background-image: url(../img/icon-logout-dark.svg);
 }
 
-.login-field.logout:active::b {
-	background-image: url(../img/icon-login.svg);
+.login-field.logout:active::before {
+	background-image: url(../img/icon-logout.svg);
 }
 
 .login-field-filled {
 	box-sizing: border-box;
 	text-align: left;
-	padding-left: 47px;
+	padding-left: 40px;
 	padding-right: 20px;
 }
 
@@ -876,7 +876,7 @@ header {
 
 .login-link {
 	position: relative;
-	margin: 0 15px;
+	margin: 0 14px;
 	padding: 0;
 	color: #32425c;
 	font-size: 16px;
@@ -896,9 +896,9 @@ header {
 	position: absolute;
 	content: "";
 	top: 7px;
-	right: -22px;
-	width: 5px;
-	height: 5px;
+	right: -20px;
+	width: 4px;
+	height: 4px;
 	border-radius: 50%;
 	background-color: #32425c;
 }
