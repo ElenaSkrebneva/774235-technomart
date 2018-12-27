@@ -3,7 +3,8 @@
 	<head>
 		<title>HTML Academy: Техномарт</title>
 		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/technomart.css" />
 	</head>
@@ -12,8 +13,11 @@
 		<header>
 			<div class="header-top">
 				<div class="container">
-					<a class="technomart technomart-header" href="#">Техномарт</a>
-					<a class="header-link search" href="#">Поиск</a>
+					<span class="technomart technomart-header">Техномарт</span>
+					<form class="search-field">
+						<input class="search-input" placeholder="Поиск">
+						<span class="pseudospan"></span>
+					</form>
 					<a class="header-link bookmarks" href="#">Закладки</a>
 					<a class="header-link basket"  href="#">Корзина</a>
 					<a class="header-link make-order"  href="#">Оформить заказ</a>
@@ -27,18 +31,18 @@
 					<div class="header-middle-element address-area">
 						<p class="header-address">
 							<span class="telephone">+7 (812) 555-05-55</span>
-							г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 						</p>
 					</div>
 					<div class="header-middle-element login-area">
 						<div class="login-fields">
 							<a class="login-field enter" href="#">Войти</a>
-							<a class="login-field" href="#">Регистрация</a>
+							<a class="login-field registration" href="#">Регистрация</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<nav class="header-bottom">
+			<div class="header-bottom">
 				<div class="container">
 					<nav class="header-nav">
 						<span class="header-nav-link header-nav-link-active">Главная</span>
@@ -50,14 +54,14 @@
 						<a class="header-nav-link" href="#">Контакты</a>
 					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 		
 		<main>
 			<div class="container">
 				<section class="info">
 					<div class="info-the-company">
-						<h2>Компания "Техномарт"</h2>
+						<h2>Компания «Техномарт»</h2>
 						<p class="info-paragraph">Настоящий мужской шоппинг начинается здесь! Оргомный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
 						<p class="info-paragraph">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 						Техномарт работает со многими транспортными компаниями:</p>
@@ -70,24 +74,24 @@
 					</div>
 					<div class="info-contacts">
 						<h2>Контакты</h2>
-						<p class="info-paragraph">Вы можете забрать товар сами<br>
-						заехав в наш офис:</p>
+						<p class="info-paragraph">Вы можете забрать товар сами<br>заехав в наш офис:</p>
 						<p class="info-paragraph info-map"><a href="#"><img alt="карта проезда" src="img/map-small.jpg" width="300" height="158"></a></p>
 						<a href="#" class="button red-button">Заблудились? Напишите нам!</a>
 					</div>
 				</section>
 				
-				<section class="modal map-pop-up">
+				<section class="modal pop-up-map">
 					<h2 class="hidden">Как до нас добраться</h2>
-					<a class="map-link" href="#">
+					<a class="pop-up-map-link" href="#" title="Ссылка на карту проезда">
 						<img src="img/map-big.jpg" alt="Карта проезда" width="940" height="446">
 					</a>
+					<button class="modal-close" type="button">Закрыть</button>
 				</section>
 				
-				<section class="modal request-pop-up">
+				<section class="modal pop-up request">
 					<form class="request-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="request-form-top">
-							<div class="request-form-container">
+						<div class="pop-up-top">
+							<div class="pop-up-container">
 								<div class="request-form-input-area name">
 									<label class="request-form-label" for="name">Ваше имя:</label>
 									<input class="request-form-input" type="text" id="name" placeholder="Имя Фамилия">
@@ -97,18 +101,21 @@
 									<input class="request-form-input" type="email" id="email" placeholder="email@example.com">
 								</div>
 							</div>
-							<div class="request-form-container">
+							<div class="pop-up-container">
 								<div class="request-form-input-area">
 									<label class="request-form-label" for="the-message">Текст письма:</label>
 									<textarea class="request-form-input" id="the-message" placeholder="В свободной форме" rows="5"></textarea>
 								</div>
 							</div>
 						</div>
-						<div class="request-form-bottom">
-							<button type="submit" class=" button red-button">Отправить</button>
-							<button type="button" class="modal-close hidden">Закрыть</button>
+						<div class="pop-up-bottom">
+							<div class="pop-up-container">
+								<button type="submit" class=" button red-button">Отправить</button>
+								<button type="button" class="modal-close hidden">Закрыть</button>
+							</div>
 						</div>
 					</form>
+					<button class="modal-close" type="button">Закрыть</button>
 				</section>
 				
 			</div>
@@ -118,8 +125,8 @@
 			<div class="footer-top">
 				<div class="container">
 					<div class="footer-top-left">
-						<a class="technomart technomart-footer" href="index.html">Техномарт</a>
-						<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
+						<span class="technomart technomart-footer">Техномарт</span>
+						<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 						+7 (812) 555-05-55
 						</p>
 					</div>
@@ -143,19 +150,19 @@
 			<div class="footer-bottom">
 				<div class="container">
 					<section class="footer-bottom-section copyright">
-					© 2010-2017 Компания "Техномарт"<br>
+					© 2010-2017 Компания «Техномарт»<br>
 					Все права защищены
 					</section>
 					<section class="footer-bottom-section social-media">
 						<div class="social-media-list">
-							<a class="social-media-link" href="http://vk.com"><img src="img/icon-vk.svg" alt="Vkontakte" width="26" height="15"></a>
-							<a class="social-media-link" href="http://facebook.com"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a>
-							<a class="social-media-link" href="http://instagram.com"><img src="img/icon-insta.svg" alt="Instagram" width="21" height="21"></a>
+							<a class="social-media-link" href="http://vk.com" title="Переход на страницу вконтакте"><img src="img/icon-vk.svg" alt="Vkontakte" width="26" height="15"></a>
+							<a class="social-media-link" href="http://facebook.com" title="Переход на фейсбук"><img src="img/icon-fb.svg" alt="Facebook" width="12" height="22"></a>
+							<a class="social-media-link" href="http://instagram.com" title="Переход в инстаграм"><img src="img/icon-insta.svg" alt="Instagram" width="21" height="21"></a>
 						</div>
 					</section>
 					<section class="footer-bottom-section references">
-						<div class="references-div">Обратная связь: <a class="references-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-						<div class="references-div">Разработано &mdash; <a class="references-link" href="http://htmlacademy.ru">htmlacademy.ru</a></div>
+						<div class="references-div-left">Обратная связь: <a class="references-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+						<div class="references-div-right">Разработано &mdash; <a class="references-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></div>
 					</section>
 				</div>	
 			</div>
