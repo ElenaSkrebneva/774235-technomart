@@ -661,7 +661,6 @@ body {
 	background-size: contain;
 	outline: none;
 	border: none;
-	background-color: none;
 	background-color: transparent;
 	opacity: 0.2;
 }
@@ -1325,7 +1324,7 @@ img {
 .login-field.logout {
 	width: 30px;
 	font-size: 0;
-	padding.: 0;
+	padding: 0;
 	margin: 0;
 }
 
@@ -1560,10 +1559,6 @@ img {
 .pop-up-bottom button {
 	flex-grow: 1;
 	margin-left: 20px;
-}
-
-.pop-up-bottom button:1st-child {
-	margin-left: 0;
 }
 
 .pop-up-bottom .pop-up-container {
