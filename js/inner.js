@@ -1,17 +1,12 @@
+//Filter-sorters
 var x = 1;
-var y=1;
-var cartPopUp = document.querySelector(".cart-pop-up");
-var buyLink = document.querySelectorAll(".buy");
-var closeModal = cartPopUp.querySelector(".modal-close");
- chooseFilter(x);
- choosePage(y);
- defineGreenZone();
+chooseFilter(x);
  
 // Next/previous controls for filter-sorters
 function moveFilter(n) {
-  chooseFilter(x += n);
+	chooseFilter(x += n);
 }
-<!-- filter sorter fucntion -->
+// Filter-sorter function
 function chooseFilter(n) {
 	var i;
 	var filters = document.getElementsByClassName("filters-sorter");
@@ -24,11 +19,17 @@ function chooseFilter(n) {
 	 filters[x-1].classList.add("current");
  }
  
- function movePage(n) {
+//Paginator
+var y=1;
+choosePage(y);
+
+// Next control for paginator
+function movePage(n) {
 	choosePage(y+=n);
- }
- 
- function choosePage(n) {
+}
+
+// Page buttons current-class toggle for paginator
+function choosePage(n) {
 	var i;
 	var paginator = document.querySelector(".paginator");
 	var pages = paginator.children;
@@ -39,13 +40,16 @@ function chooseFilter(n) {
 	pages[y-1].classList.add("current");
  }
  
- function defineGreenZone() {
+ //Defines green zone for price-filter price-range-input
+defineGreenZone();
+function defineGreenZone() {
 	var greenZone = document.getElementById("green-zone");
 	var max = document.getElementById("filter-price_range-input").value;
 	var width = 160*(max/35000) -20;
 	greenZone.style.width = width +"px";
  }
- <!-- sorter-buttons active class toggle -->
+ 
+// Sorter-buttons 
  function addActive(k) {
 	var sorterButtons = document.getElementsByClassName("filters-sorter-button");
 	var z;
@@ -54,14 +58,20 @@ function chooseFilter(n) {
 	sorterButtons[k-1].classList.add("active");
  }
  
- for (var t=0; t<buyLink.length; t++) {
- buyLink[t].addEventListener("click", function(evt) {
+// Cart modal
+var cartPopUp = document.querySelector(".cart-pop-up");
+var buyLink = document.querySelectorAll(".buy");
+//Cart modal call
+for (var t=0; t<buyLink.length; t++) {
+	buyLink[t].addEventListener("click", function(evt) {
 	evt.preventDefault();
 	cartPopUp.classList.add("modal-show");
- });
+	});
  }
- closeModal.addEventListener("click", function(evt) {
+//Close cart modal
+var closeModal = cartPopUp.querySelector(".modal-close");
+closeModal.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	cartPopUp.classList.remove("modal-show");
- });
+});
  
